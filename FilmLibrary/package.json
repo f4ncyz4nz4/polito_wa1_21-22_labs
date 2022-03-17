@@ -1,0 +1,15 @@
+{
+  "name": "lab01",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lab01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ippo",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.8",
+    "sqlite3": "^5.0.2"
+  }
+}
