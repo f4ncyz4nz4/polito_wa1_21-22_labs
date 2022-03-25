@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <title>FilmLibrary</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand d-block d-sm-block d-md-none" href="#">
+                    <img class="float-start" id="reverse" src="./icons/list.svg" alt="" width="30" height="24">
+                </a>
+                <a class="navbar-brand offset-sm-2 offset-md-0" href="#">
+                    <img class="float-start" id="reverse" src="./icons/film.svg" alt="" width="30" height="24">Film Library
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2 d-none d-sm-none d-md-block" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-warning d-none d-sm-none d-md-block" type="submit">Search</button>
+                </form>
+                <a class="navbar-brand" href="#">
+                    <img class="float-end" id="reverse" src="./icons/person-circle.svg" alt="" width="30" height="24">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 d-none d-sm-none d-md-block" id="aside">
+                <aside>
+                    <ul class="list-group">
+                        <li class="list-group-item active" id="darkblue" aria-current="true">All</li>
+                        <li class="list-group-item">Favorite</li>
+                        <li class="list-group-item">Best Rated</li>
+                        <li class="list-group-item">Last Seen</li>
+                        <li class="list-group-item">Seen Last Month</li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-12 col-md-9">
+                <main>
+                    <h2>All</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="name">Title</th>
+                                <th>Favourite</th>
+                                <th>Date</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pulp Fiction</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Favorite
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>March 10, 2022</td>
+                                <td>
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>21 Grams</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Favorite
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>March 17, 2022</td>
+                                <td>
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Star Wars</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Favorite
+                                        </label>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Matrix</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Favorite
+                                        </label>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Up!</td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Favorite
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>March 21, 2022</td>
+                                <td>
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#">
+                        <img class="float-end" id="plus" src="./icons/plus-circle.svg" alt="" width="30" height="24">
+                    </a>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+<div>
+    <footer>
+        &COPY; 2022 - Web Application I (A-L)
+    </footer>
+</div>
+
+</html>

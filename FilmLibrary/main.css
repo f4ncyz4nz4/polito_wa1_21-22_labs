@@ -1,0 +1,23 @@
+img#reverse {
+    filter: invert(100%);
+}
+
+li#darkblue {
+    background-color: rgb(6, 6, 175);
+}
+
+div#aside {
+    background-color: rgb(245, 240, 240);
+}
+
+aside,
+main {
+    height: 100vh;
+    margin: 16px;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
