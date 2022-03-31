@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script defer src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script defer src="film_library.js"></script>
     <title>FilmLibrary</title>
 </head>
 
@@ -22,7 +24,8 @@
                     <img class="float-start" id="reverse" src="./icons/list.svg" alt="" width="30" height="24">
                 </a>
                 <a class="navbar-brand offset-sm-2 offset-md-0" href="#">
-                    <img class="float-start" id="reverse" src="./icons/film.svg" alt="" width="30" height="24">Film Library
+                    <img class="float-start" id="reverse" src="./icons/film.svg" alt="" width="30" height="24">Film
+                    Library
                 </a>
                 <form class="d-flex">
                     <input class="form-control me-2 d-none d-sm-none d-md-block" type="search" placeholder="Search"
@@ -39,13 +42,13 @@
         <div class="row">
             <div class="col-3 d-none d-sm-none d-md-block" id="aside">
                 <aside>
-                    <ul class="list-group">
-                        <li class="list-group-item active" id="darkblue" aria-current="true">All</li>
-                        <li class="list-group-item">Favorite</li>
-                        <li class="list-group-item">Best Rated</li>
-                        <li class="list-group-item">Last Seen</li>
-                        <li class="list-group-item">Seen Last Month</li>
-                    </ul>
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action" id="all" aria-current="true">All</button>
+                        <button class="list-group-item list-group-item-action" id="favorite">Favorite</button>
+                        <button class="list-group-item list-group-item-action" id="bestRated">Best Rated</button>
+                        <button class="list-group-item list-group-item-action" id="lastSeen">Last Seen</button>
+                        <button class="list-group-item list-group-item-action" id="seenLastM">Seen Last Month</button>
+                    </div>
                 </aside>
             </div>
             <div class="col-12 col-md-9">
@@ -61,101 +64,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Pulp Fiction</td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Favorite
-                                        </label>
-                                    </div>
-                                </td>
-                                <td>March 10, 2022</td>
-                                <td>
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>21 Grams</td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Favorite
-                                        </label>
-                                    </div>
-                                </td>
-                                <td>March 17, 2022</td>
-                                <td>
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Star Wars</td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Favorite
-                                        </label>
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <img class="float-left" src="./icons/star-fill.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Matrix</td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Favorite
-                                        </label>
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Up!</td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Favorite
-                                        </label>
-                                    </div>
-                                </td>
-                                <td>March 21, 2022</td>
-                                <td>
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                    <img class="float-left" src="./icons/star.svg" alt="" width="30" height="24">
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                     <a href="#">
